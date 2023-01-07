@@ -1,0 +1,12 @@
+{% extends 'mailsender/base.html'%}
+
+{% block content %}
+<div class="vh-100 d-flex justify-content-center align-items-center ">
+    <div class="col-md-5 p-5 shadow-sm border rounded-5 border-primary bg-white">
+        <h2 class="text-center mb-4 text-primary">A token has been sent</h2>
+       <a href="{% url 'login' %}" class="btn btn-primary" type="submit">Login</a>
+       
+    </div>
+</div>
+
+{% endblock %}
