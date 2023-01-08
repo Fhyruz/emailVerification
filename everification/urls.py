@@ -24,5 +24,6 @@ urlpatterns = [
     path('success', success, name='success'),
     path('verify/<auth_token>' , verify , name="verify"),
     path('login', login_attempt, name='login'),
+    path('logout', logout_attempt, name='logout'),
     
 ]

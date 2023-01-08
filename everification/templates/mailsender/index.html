@@ -1,1 +1,13 @@
-home
+{% extends 'mailsender/base.html'%}
+
+{% block content %}
+<div class="vh-100 d-flex justify-content-center align-items-center ">
+    <div class="col-md-5 p-5 shadow-sm border rounded-5 border-primary bg-white">
+        <h2 class="text-center mb-4 text-primary">Welcome!!!</h2>
+       <div class="text-center">
+        <a href="{% url 'logout' %}" class="btn btn-primary" type="submit">Logout</a>
+        </div>      
+    </div>
+</div>
+
+{% endblock %}

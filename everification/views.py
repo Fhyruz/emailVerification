@@ -79,6 +79,9 @@ def token(request):
 def success(request):
     return render(request, 'mailsender/success.html')
 
+def logout_attempt(request):
+    return redirect('login')
+
 
 
 def verify(request , auth_token):
